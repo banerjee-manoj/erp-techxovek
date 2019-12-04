@@ -12,7 +12,7 @@ public class StudentRegistrationMapper implements RowMapper<StudentRegistrationV
 	@Override
 	public StudentRegistrationVO mapRow(ResultSet rs, int arg1) throws SQLException {
 		StudentRegistrationVO student = new StudentRegistrationVO();
-		student.setStudent_name(rs.getString(1));
+		student.setStudentName(rs.getString(1));
 		student.setDepartment(rs.getString(2));
 		
 		

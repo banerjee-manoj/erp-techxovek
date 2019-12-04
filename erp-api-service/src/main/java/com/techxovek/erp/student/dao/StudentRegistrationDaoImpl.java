@@ -39,7 +39,9 @@ public class StudentRegistrationDaoImpl implements StudentRegistrationDao{
 		
 		   log.info("Begin : registerStudent()");
 		 	String query = env.getProperty("registerStudent");
-			jdbcTemplate.update(query, student.getStudent_name(),student.getDepartment(),student.getAdmissionYear(),
+		 	log.info("Register Query "+query);
+		 	log.info("Student Name {}",student.getStudentName());
+			jdbcTemplate.update(query, student.getStudentName(),student.getDepartment(),student.getAdmissionYear(),
 					student.getEmail(),student.getContactNo(),student.getAddress());
 			log.info("END: registerStudent()");
 	}

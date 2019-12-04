@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude=DataSourceAutoConfiguration.class)
+@EnableAutoConfiguration
 @PropertySource("classpath:query.properties")
 public class ServicesApplication {
 

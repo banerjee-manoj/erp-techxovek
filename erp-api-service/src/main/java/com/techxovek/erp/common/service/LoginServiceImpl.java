@@ -16,7 +16,6 @@ public class LoginServiceImpl implements LoginService{
 	LoginDao loginDao;
 	
 	
-	
 	@Override
 	public boolean validateUser() {
 		log.debug("inside the validate user");
